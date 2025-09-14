@@ -75,7 +75,7 @@ if(process.env.NODE_ENV !== "production"){
   });
 }
 //export server for testing purposes
-exports.server=server;
+module.exports=server;
 
 
 
