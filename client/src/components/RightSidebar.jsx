@@ -1,4 +1,4 @@
-import React, { use, useContext, useEffect, useState } from 'react'
+import React, {  useContext, useEffect, useState } from 'react'
 import avatar_icon from '../assets/avatar_icon.png'
 import imagesdata from '../assets/imagesDummydata'
 import { chatContext } from '../../context/chatContext'
