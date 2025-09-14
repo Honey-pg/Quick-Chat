@@ -65,10 +65,18 @@ app.get("/",(req,res)=>{
 
 const PORT = process.env.PORT || 3000;
 
+
+
 // IMPORTANT: start the HTTP server instance so Socket.IO works correctly
-server.listen(PORT, () => {
-  console.log(`Server and Socket.IO running on port ${PORT}`);
-});
+
+if(process.env.NODE_ENV !== "production"){
+  server.listen(PORT, () => {
+    console.log(`Server and Socket.IO running on port ${PORT}`);
+  });
+}
+//export server for testing purposes
+exports.server=server;
+
 
 
 
