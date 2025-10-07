@@ -46,7 +46,7 @@ io.on("connection", (socket) => {
 app.use(express.json({limit: '4mb'}))
 app.use(cors(
     {
-        origin:"*",
+        origin:"https://quick-chat-rose.vercel.app",
         credentials:true,
     }
 ));
